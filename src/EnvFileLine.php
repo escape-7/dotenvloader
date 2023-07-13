@@ -25,7 +25,7 @@ class EnvFileLine
     public function getEnvironmentVariable(): EnvironmentVariable
     {
         $environmentVariable = explode(self::DELIMITER, $this->line);
-        return new EnvironmentVariable($environmentVariable[1], $environmentVariable[0]);
+        return new EnvironmentVariable(trim($environmentVariable[1]), trim($environmentVariable[0]));
     }
 
 }
