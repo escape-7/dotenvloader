@@ -1,0 +1,10 @@
+{
+    "name": "escape-7/dotenvloader",
+    "minimum-stability": "stable",
+
+    "autoload": {
+        "psr-4": {
+            "Loader\\": "src"
+        }
+    }
+}
